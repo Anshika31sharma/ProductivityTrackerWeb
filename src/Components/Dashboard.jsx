@@ -37,10 +37,10 @@ const Dashboard = () => {
                 <div className="font-mulish font-normal text-right text-xs  leading-6 text-green-500">
                   {data.percentage}%
                 </div>
-                <div className="bg-gray-200 h-2 rounded-full">
+                <div className=" bg-transparent  h-2 rounded-full">
                   <div
                     style={{ width: `${data.percentage}%` }}
-                    className="bg-green-600 h-2  sm:text-sm rounded-full"
+                    className="bg-green-400 h-2 border border-green-600   sm:text-sm rounded-full"
                   />
                 </div>
               </div>

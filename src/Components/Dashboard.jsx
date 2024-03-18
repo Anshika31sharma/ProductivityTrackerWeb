@@ -21,7 +21,7 @@ const Dashboard = ({ setCurrentUrl }) => {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 flex flex-col">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 flex flex-col ">
     <div className="max-w-md w-full mx-auto rounded-xl shadow-xl">
         <div className="p-8">
           <img className="h-20 w-auto ml-auto "  src={logo2} alt="Workflow" />

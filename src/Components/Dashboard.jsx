@@ -75,7 +75,7 @@ const Dashboard = ({ setCurrentUrl }) => {
   </svg>
         </button>
         <button className="flex items-center" onClick={handleContactClick}>
-        <svg
+  <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
     fill="none"
@@ -86,10 +86,11 @@ const Dashboard = ({ setCurrentUrl }) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M8 12h.01M12 12h.01M16 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0m-6 0h6"
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4a3 3 0 100 6 3 3 0 000-6zm0 8a8 8 0 00-6 3.2c.01 1.74 3.29 2.8 6 2.8s5.99-1.06 6-2.8c-1.29-1.55-3.81-2.52-6-2.8z"
     />
   </svg>
-        </button>
+</button>
+
       </div>
     </div>
   );

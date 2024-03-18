@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import logo from "../Assets/logo.png";
 import Dashboard from "./Dashboard";
 
-const Login = () => {
+const Login = ({ setCurrentUrl }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    // If login is successful, set isLoggedIn to true
     setIsLoggedIn(true);
   };
 
@@ -78,7 +76,7 @@ const Login = () => {
           </div>
         </div>
       ) : (
-        <Dashboard />
+        <Dashboard setCurrentUrl={setCurrentUrl} />
       )}
     </div>
   );

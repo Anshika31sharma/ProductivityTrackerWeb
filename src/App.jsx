@@ -1,7 +1,7 @@
 import React from "react";
-import Dashboard from "./Components/Dashboard"; // Adjust the import path as needed
-import Contact from "./Components/Contact"; // Adjust the import path as needed
-import Login from "./Components/Login"; // Assuming you have a Login component
+import Dashboard from "./Components/Dashboard";
+import Contact from "./Components/Contact";
+import Login from "./Components/Login";
 import "./App.css";
 
 function App() {

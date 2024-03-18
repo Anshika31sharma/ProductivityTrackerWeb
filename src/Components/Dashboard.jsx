@@ -11,18 +11,18 @@ const Dashboard = ({ setCurrentUrl }) => {
     { day: 'Friday', percentage: 89 },
     { day: 'Saturday', percentage: 98 }
   ];
+
   const handleDashboardClick = () => {
-    window.history.pushState({}, '', '/dashboard');
-    setCurrentUrl(window.location.pathname);
+    setCurrentUrl('/dashboard');
   };
+
   const handleContactClick = () => {
-    window.history.pushState({}, '', '/contact');
-    setCurrentUrl(window.location.pathname);
+    setCurrentUrl('/contact');
   };
 
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8 flex flex-col">
-      <div className="max-w-md w-full mx-auto rounded-xl shadow-xl">
+    <div className="max-w-md w-full mx-auto rounded-xl shadow-xl">
         <div className="p-8">
           <img className="h-20 w-auto ml-auto "  src={logo2} alt="Workflow" />
           <div className="text-center ml-20 mt-10 relative whitespace-nowrap">
@@ -57,10 +57,9 @@ const Dashboard = ({ setCurrentUrl }) => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-900 gap-20 flex justify-center space-x-4 rounded-2xl py-4 px-5 text-center text-white"style={{ backgroundColor: "#0F2323"}}>
-
-<button className="flex items-center " onClick={ handleDashboardClick}>
-  <svg
+      <div className="bg-gray-900 gap-20 flex justify-center space-x-4 rounded-2xl py-4 px-5 text-center text-white" style={{ backgroundColor: "#0F2323" }}>
+        <button className="flex items-center" onClick={handleDashboardClick}>
+        <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
     fill="none"
@@ -74,9 +73,9 @@ const Dashboard = ({ setCurrentUrl }) => {
       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
     />
   </svg>
-</button>
-<button className="flex items-center" onClick={handleContactClick}>
-  <svg
+        </button>
+        <button className="flex items-center" onClick={handleContactClick}>
+        <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
     fill="none"
@@ -90,10 +89,9 @@ const Dashboard = ({ setCurrentUrl }) => {
       d="M8 12h.01M12 12h.01M16 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0m-6 0h6"
     />
   </svg>
-</button>
-</div>
+        </button>
       </div>
-
+    </div>
   );
 };
 
